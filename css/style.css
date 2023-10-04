@@ -13,12 +13,16 @@ nav {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/volunteer-soup-kitchen.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+  padding: 230px 0;
+  text-align: center;
+}
+
+header.secondary {
+  color: #000;
   padding: 230px 0;
   text-align: center;
 }
