@@ -12,7 +12,7 @@ nav {
   box-shadow: 0 7px 7px 0px rgba(0, 0, 0, 0.1);
 }
 
-header {
+header.home {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,24 +21,41 @@ header {
   text-align: center;
 }
 
+header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 100px 30px 75px;
+  text-align: center;
+}
+
 header.secondary {
   color: #000;
-  padding: 230px 30px;
+  padding: 100px 30px 75px;
   text-align: center;
 }
 
 header h1 {
   font-weight: 700;
-  font-size: 96px;
+  font-size: 64px;
   line-height: 1;
   margin: 30px 0;
 }
 
 header h2 {
   font-weight: 400;
-  font-size: 40px;
+  font-size: 18px;
   line-height: 1.5;
   margin: 0;
+}
+
+header.home h1 {
+  font-size: 96px;
+}
+
+header.home h2 {
+  font-size: 40px;
 }
 
 header h3 {
@@ -80,7 +97,7 @@ main h2 {
 main h3 {
   font-size: 40px;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1;
   margin: 0;
 }
 
@@ -119,7 +136,7 @@ section.secondary {
 form {
   border-radius: 10px;
   display: block;
-  margin: 40px auto;
+  margin: 0 auto;
   max-width: 380px;
 }
 
@@ -232,7 +249,7 @@ footer a {
   margin: 0 20px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 870px) {
   header {
     padding: 80px 0 65px;
   }
