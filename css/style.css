@@ -250,15 +250,21 @@ footer a {
 }
 
 @media (max-width: 870px) {
-  header {
+  header,
+  header.home,
+  header.secondary {
     padding: 80px 0 65px;
   }
 
-  header h1 {
+  header h1,
+  header.home h1,
+  header.secondary h1 {
     font-size: 48px;
   }
 
-  header h2 {
+  header h2,
+  header.home h2,
+  header.secondary h2 {
     font-size: 20px;
   }
 
