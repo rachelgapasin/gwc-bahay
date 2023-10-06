@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a0c35383ef.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>About Bahay</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Bahay</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+            <a class="nav-link" href="/about.html">About</a>
+            <a class="nav-link" href="/shelters.html">Shelters</a>
+            <a class="nav-link" href="/get-involved.html">Get Involved</a>
+            <a class="nav-link active" href="/contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="secondary">
+      <h1>Contact Us</h1>
+      <h2>
+        Want to ask us a question? Please fill out the form below, and we’ll get back to you as soon as possible!
+      </h2>
+    </header>
+    <main>
+      <section>
+        <form
+        action="https://formsubmit.co/rachelgapasinn@gmail.com"
+        method="POST"
+      >
+        <div class="label-input">
+          <label for="name">Name<span class="required-field">*</span></label>
+          <br />
+          <input type="text" name="name" class="text-box" id="name" required />
+        </div>
+        <div class="label-input">
+          <label for="email">Email<span class="required-field">*</span></label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            class="text-box"
+            id="email"
+            required
+          />
+        </div>
+        <div class="label-input">
+          <label for="phone-number">Phone number</label>
+          <br />
+          <input
+            type="tel"
+            name="phone-number"
+            class="text-box"
+            id="phone-number"
+          />
+        </div>
+        <div class="label-input">
+          <label for="message">Message<span class="required-field">*</span></label>
+          <br />
+          <textarea
+            name="message"
+            class="text-box"
+            id="message"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <input type="submit" class="btn" />
+      </form>
+      </section>
+    </main>
+  </body>
+</html>

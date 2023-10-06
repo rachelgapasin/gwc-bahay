@@ -17,13 +17,13 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  padding: 230px 0;
+  padding: 230px 30px;
   text-align: center;
 }
 
 header.secondary {
   color: #000;
-  padding: 230px 0;
+  padding: 230px 30px;
   text-align: center;
 }
 
@@ -116,9 +116,16 @@ section.secondary {
   background-color: #f8f8f8;
 }
 
-/* main .grid {
-  align-items: center;
-} */
+form {
+  border-radius: 10px;
+  display: block;
+  margin: 40px auto;
+  max-width: 380px;
+}
+
+label {
+  font-family: var(--default-font-family);
+}
 
 .text-center {
   text-align: center;
@@ -143,17 +150,41 @@ section.secondary {
 }
 
 .btn {
-  background-color: #0b2b4c;
-  color: #fff;
-  display: block;
+  background-color: var(--secondary-color);
+  color: #000;
   font-size: 14px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 3px;
-  padding: 16px;
+  padding: 10px 16px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  width: 100%;
+}
+
+.label-input {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.text-box {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 7px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.text-box:focus {
+  border: 2px solid var(--primary-color);
+  outline: 3px solid #87b9ff;
+}
+
+.required-field {
+  color: red;
 }
 
 footer {
