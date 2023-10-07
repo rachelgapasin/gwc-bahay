@@ -304,6 +304,7 @@ footer a {
   .grid-2-columns-small {
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr;
+    max-width: none;
   }
 
   .grid-2-columns-small div {
@@ -312,5 +313,22 @@ footer a {
 
   .google-maps {
     margin-left: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .grid-2-columns-small {
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    max-width: 350px;
+    text-align: center;
+  }
+
+  .grid-2-columns-small div {
+    border-bottom: 1px dashed #a5a5a5;
+  }
+
+  .google-maps {
+    margin: auto;
   }
 }
