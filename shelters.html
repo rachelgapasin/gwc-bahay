@@ -117,13 +117,14 @@
           </div>
         </div>
         <div>
-          <h3 class="text-center">Add a Listing</h3>
+          <p class="text-center">Don't see a shelter listed?</p>
+          <h3 class="text-center mt-2">Add a Listing</h3>
           <form
-            class="thin mt-4 mb-4"
+            class="thin mt-2 mb-4"
             action="https://formsubmit.co/rachelgapasinn@gmail.com"
             method="POST"
           >
-            <div class="label-input">
+            <div>
               <label for="name"
                 >Name<span class="required-field">*</span></label
               >
@@ -136,40 +137,54 @@
                 required
               />
             </div>
-            <div class="label-input">
-              <label for="email"
-                >Email<span class="required-field">*</span></label
+            <div>
+              <label for="address"
+                >Address<span class="required-field">*</span></label
               >
               <br />
               <input
-                type="email"
-                name="email"
+                type="text"
+                name="address"
                 class="text-box"
-                id="email"
+                id="address"
                 required
               />
             </div>
-            <div class="label-input">
-              <label for="phone-number">Phone number</label>
-              <br />
-              <input
-                type="tel"
-                name="phone-number"
-                class="text-box"
-                id="phone-number"
-              />
-            </div>
-            <div class="label-input">
-              <label for="message"
-                >Message<span class="required-field">*</span></label
+            <div>
+              <label for="open-hours"
+                >Open hours (if unknown, type “TBA”)<span class="required-field"
+                  >*</span
+                ></label
               >
               <br />
               <textarea
-                name="message"
+                name="open-hours"
                 class="text-box"
-                id="message"
-                rows="4"
+                id="open-hours"
                 required
+              ></textarea>
+            </div>
+            <div>
+              <label for="shelter-phone-number"
+                >Phone number<span class="required-field">*</span></label
+              >
+              <br />
+              <input
+                type="tel"
+                name="shelter-phone-number"
+                class="text-box"
+                id="shelter-phone-number"
+                required
+              />
+            </div>
+            <div>
+              <label for="additional-info">Additional information</label>
+              <br />
+              <textarea
+                name="additional-info"
+                class="text-box"
+                id="additional-info"
+                rows="4"
               ></textarea>
             </div>
             <input type="submit" class="btn" />

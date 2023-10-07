@@ -197,9 +197,9 @@ label {
   color: #fff;
 }
 
-.label-input {
+label {
   font-size: 18px;
-  margin: 10px 0;
+  margin-top: 10px;
 }
 
 .text-box {
