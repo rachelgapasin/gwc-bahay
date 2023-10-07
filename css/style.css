@@ -120,6 +120,7 @@ main p {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
+  margin: 7px 0;
   opacity: 0.7;
 }
 
@@ -161,9 +162,20 @@ label {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.video {
-  width: 100%;
-  aspect-ratio: 2 / 1;
+.grid-2-columns-small {
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  max-height: 1000px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.grid-2-columns-small div {
+  border-bottom: 1px dashed #a5a5a5;
+}
+
+.grid-2-columns-small div:last-child {
+  border-bottom: none;
 }
 
 .btn {
@@ -207,6 +219,12 @@ label {
 
 .required-field {
   color: red;
+}
+
+.google-maps {
+  aspect-ratio: 1 / 1;
+  max-width: 200px;
+  width: 100%;
 }
 
 footer {
@@ -276,8 +294,22 @@ footer a {
     padding: 30px;
   }
 
-  .grid {
+  .grid-2-columns,
+  .grid-3-columns {
     grid-gap: 30px;
     grid-template-columns: 1fr;
+  }
+
+  .grid-2-columns-small {
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-2-columns-small div {
+    border: none;
+  }
+
+  .google-maps {
+    margin-left: auto;
   }
 }
