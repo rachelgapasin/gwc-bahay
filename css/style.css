@@ -142,11 +142,8 @@ form {
 }
 
 label {
-  font-family: var(--default-font-family);
-}
-
-.text-center {
-  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 .grid {
@@ -208,11 +205,6 @@ label {
   color: #fff;
 }
 
-label {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
 .text-box {
   border: 1px solid var(--primary-color);
   border-radius: 5px;
@@ -226,6 +218,16 @@ label {
 .text-box:focus {
   border: 2px solid var(--primary-color);
   outline: 3px solid #87b9ff;
+}
+
+.special-color {
+  color: var(--primary-color);
+}
+
+.special-styling {
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  padding: 20px;
 }
 
 .required-field {
@@ -310,7 +312,8 @@ footer a {
     grid-template-columns: 1fr;
   }
 
-  .grid-2-columns-md, .grid-2-columns-md-only {
+  .grid-2-columns-md,
+  .grid-2-columns-md-only {
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr;
     max-width: none;
@@ -328,7 +331,7 @@ footer a {
 @media (max-width: 660px) {
   .grid-2-columns-md,
   .grid-2-columns-md-only {
-    grid-gap: 20px;
+    grid-gap: 10px;
     grid-template-columns: 1fr;
     max-width: 350px;
     text-align: center;
