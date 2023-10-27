@@ -346,7 +346,17 @@ footer a {
     border-bottom: none;
   }
 
+
+  /* These two underneathe were what I added
+  It'll probably help to fix these or edit the ones you have had and change them to connect to the .mapImage section  */
+
   .google-maps {
     margin: auto;
   }
+
+  .mapImage {
+  width: 100%;
+  height: 300px; /* Adjust the map's height as needed */
+}
+
 }
