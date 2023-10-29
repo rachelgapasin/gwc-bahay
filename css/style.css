@@ -134,6 +134,13 @@ section.secondary {
   background-color: #f8f8f8;
 }
 
+iframe {
+  border: 3px solid var(--secondary-color);
+  border-radius: 10px;
+  width: 400px;
+}
+
+
 form {
   border-radius: 10px;
   display: block;
@@ -178,14 +185,6 @@ label {
   max-width: 350px;
 }
 
-.grid-2-columns-md-only div {
-  border-bottom: 1px dashed #a5a5a5;
-}
-
-.grid-2-columns-md-only div:last-child {
-  border-bottom: none;
-}
-
 .btn {
   background-color: var(--secondary-color);
   color: #000;
@@ -205,13 +204,27 @@ label {
   color: #fff;
 }
 
+.google-maps {
+  margin-bottom: 7px;
+}
+
+.shelter-info {
+  margin-bottom: 20px;
+}
+
+#shelter-container {
+  margin: auto;
+  max-height: 1000px;
+  overflow-y: auto;
+}
+
 .text-box {
   border: 1px solid var(--primary-color);
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 16px;
   margin: 7px 0;
-  padding: 10px;
+  padding: 10px 15px;
   width: 100%;
 }
 
@@ -234,14 +247,9 @@ label {
   color: red;
 }
 
-.google-maps {
-  height: 100%;
-  width: 100%;
-}
 
 footer {
   background-color: #fff;
-  padding: 30px;
 }
 
 footer h3 {
@@ -263,7 +271,6 @@ footer a {
 
 .contact-box {
   background: var(--secondary-color);
-  border-radius: 10px;
   padding: 50px 30px;
   text-align: center;
 }
@@ -279,7 +286,14 @@ footer a {
   margin: 0 20px;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 991px) {
+  iframe {
+    height: 90%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
   header,
   header.home,
   header.secondary {
@@ -303,7 +317,12 @@ footer a {
   }
 
   section {
-    padding: 30px;
+    padding: 30px ;
+  }
+
+  iframe {
+    height: 100%;
+    max-width: 400px;
   }
 
   .grid-2-columns,
@@ -318,35 +337,14 @@ footer a {
     grid-template-columns: 1fr 1fr;
     max-width: none;
   }
-
-  .grid-2-columns-md-only div {
-    border: none;
-  }
-
-  .google-maps {
-    margin-left: auto;
-  }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 575px) {
   .grid-2-columns-md,
   .grid-2-columns-md-only {
     grid-gap: 10px;
     grid-template-columns: 1fr;
     max-width: 350px;
     text-align: center;
-  }
-
-  .grid-2-columns-md div,
-  .grid-2-columns-md-only div {
-    border-bottom: 1px dashed #a5a5a5;
-  }
-
-  .grid-2-columns-md div:last-child {
-    border-bottom: none;
-  }
-
-  .google-maps {
-    margin: auto;
   }
 }
