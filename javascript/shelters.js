@@ -144,10 +144,9 @@ function displayShelters() {
     shelterContainer.appendChild(mapDiv);
 
     const shelterDiv = document.createElement("div");
-    shelterDiv.className =
-      "shelter-info col-12 col-md-6 col-lg-12";
+    shelterDiv.className = "shelter-info col-12 col-md-6 col-lg-12";
     shelterDiv.innerHTML = `
-      <h5 class="special-color ">${shelter.name}</h5>
+      <h5 class="special-color">${shelter.name}</h5>
       <p class="address special-color ">${shelter.address}</p>
       <p class="address"><strong>Hours:</strong> ${shelter.hours}</p>
       <p class="phoneNumber"><strong>Phone Number:</strong> ${shelter.phoneNumber}</p>
