@@ -25,7 +25,8 @@
       src="https://kit.fontawesome.com/a0c35383ef.js"
       crossorigin="anonymous"
     ></script>
-    <title>Bahay NJ</title>
+    <title>Shelters - Bahay</title>
+    <script type="text/javascript" src=".vscode\display.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-sm bg-light fixed-top">
@@ -44,66 +45,118 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link" aria-current="page" href="/">Home</a>
             <a class="nav-link" href="/about.html">About</a>
-            <a class="nav-link" href="/shelters.html">Shelters</a>
+            <a class="nav-link active" href="/shelterv2.html">Shelters</a>
             <a class="nav-link" href="/get-involved.html">Get Involved</a>
             <a class="nav-link" href="/veterans.html">Veterans</a>
             <a class="nav-link" href="/contact.html">Contact</a>
-            
           </div>
         </div>
       </div>
     </nav>
     <header
-      class="home"
       style="
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)
           ),
-          url('/images/volunteer-soup-kitchen.png');
+          url('../images/volunteer-donations.jpeg');
       "
     >
-      <h1>Bahay</h1>
-      <h2>Addressing Homelessness in New Jersey</h2>
-      <a href="/shelters.html">Learn More</a>
+      <h1>Shelters in NJ</h1>
+      <h2>
+        Welcome to Bahay, where compassion meets action in the fight against
+        homelessness.
+      </h2>
     </header>
     <main>
-      <section class="row">
-        <div class="col-md">
-          <img src="/images/tents.jpg" alt="Tents" width="100%" />
+      <section class="grid grid-2-columns">
+        <div class="shelter-info grid grid-2-columns-md-only">
+
+          <!-- Shelter Container was added  -->
+          <div id="shelterContainer">
+            <div class="shelter">
+            <h2>Shelter Name</h2>
+            
+          </div>
+          </div>
         </div>
-        <div class="col-md">
-          <h2>Why is this topic important?</h2>
-          <h3 class="mt-3">Homelessness Statistics</h3>
-          <!-- <p>
-            Facing homelessness due to a lack of shelter is a universal
-            experience in the US.
-            <a href="https://www.security.org/resources/homeless-statistics/"
-              >“Of those experiencing homelessness, 60 percent found refuge in
-              sheltered locations (like emergency shelters, safe havens, or
-              transitional housing programs). The other 40 percent spent their
-              nights unsheltered (often on the street, in abandoned buildings,
-              or in other places not designated/suitable for human
-              habitation).”</a
-            >
-          </p> -->
-          <p class="mt-3">
-            During the 2021-2022 FAFSA application cycle,
-            <a
-              href="https://nche.ed.gov/wp-content/uploads/2023/05/Homeless-FAFSA-Applicants-2019-20-to-2021-22.docx"
-              >a total of 31,749 applications</a
-            >
-            were determined to be (or at risk of becoming) unaccompanied
-            homeless youth, either by an agency (self-reported on the FAFSA) or
-            by a school financial aid administrator.
-          </p>
-          <p>
-            In 2023, The numbers of NJ homeless population’s housing situations
-            (including emergency shelter, transitional housing, unshelter, and
-            safe haven) have all increased since 2022.
-          </p>
+
+        <div>
+          <!-- Made sure to add back the add a listing portion -->
+          <p class="text-center">Don't see a shelter listed?</p>
+          <h3 class="text-center mt-2">Add a Listing</h3>
+          <form
+            class="thin mt-2 mb-4"
+            action="https://formsubmit.co/rachelgapasinn@gmail.com"
+            method="POST"
+          >
+            <div>
+              <label for="name"
+                >Name<span class="required-field">*</span></label
+              >
+              <br />
+              <input
+                type="text"
+                name="name"
+                class="text-box"
+                id="name"
+                required
+              />
+            </div>
+            <div>
+              <label for="address"
+                >Address<span class="required-field">*</span></label
+              >
+              <br />
+              <input
+                type="text"
+                name="address"
+                class="text-box"
+                id="address"
+                required
+              />
+            </div>
+            <div>
+              <label for="open-hours"
+                >Open hours (if unknown, type “TBA”)<span class="required-field"
+                  >*</span
+                ></label
+              >
+              <br />
+              <textarea
+                name="open-hours"
+                class="text-box"
+                id="open-hours"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <label for="shelter-phone-number"
+                >Phone number<span class="required-field">*</span></label
+              >
+              <br />
+              <input
+                type="tel"
+                name="shelter-phone-number"
+                class="text-box"
+                id="shelter-phone-number"
+                required
+              />
+            </div>
+            <div>
+              <label for="additional-info">Additional information</label>
+              <br />
+              <textarea
+                name="additional-info"
+                class="text-box"
+                id="additional-info"
+                rows="4"
+              ></textarea>
+            </div>
+            <input type="submit" class="btn" />
+          </form>
         </div>
       </section>
     </main>
