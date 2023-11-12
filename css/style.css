@@ -17,7 +17,8 @@ header.home {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  padding: 230px 30px;
+  height: 100vh;
+  padding: 200px 30px 140px;
   text-align: center;
 }
 
@@ -194,6 +195,13 @@ label {
   color: red;
 }
 
+.statistics-map {
+  width: 450px;
+}
+
+.statistics-key {
+  width: 200px;
+}
 
 footer {
   background-color: #fff;
@@ -238,7 +246,8 @@ footer a {
   margin-bottom: 7px;
 }
 
-.shelter-info, .soup-kitchen {
+.shelter-info,
+.soup-kitchen {
   margin-bottom: 20px;
 }
 
@@ -269,6 +278,18 @@ footer a {
 
 /* < large bootstrap width */
 @media (max-width: 991px) {
+  section {
+    padding: 50px;
+  }
+
+  .statistics-map {
+    width: 100%;
+  }
+
+  .statistics-key {
+    width: 220px;
+  }
+
   #shelter-container iframe {
     height: 90%;
     width: 100%;
@@ -281,6 +302,10 @@ footer a {
   header.home,
   header.secondary {
     padding: 80px 30px 55px;
+  }
+
+  header.home {
+    height: fit-content;
   }
 
   header h1,
@@ -300,11 +325,34 @@ footer a {
   }
 
   section {
-    padding: 30px ;
+    padding: 30px;
+  }
+  
+  .statistics-map {
+    width: 500px;
+  }
+
+  .statistics-key {
+    width: 200px;
   }
 
   #shelter-container iframe {
     height: 100%;
     max-width: 400px;
+  }
+}
+
+/* < small bootstrap width */
+@media (max-width: 575px) {
+  main h3 {
+    font-size: 30px;
+  }
+
+  .statistics-map {
+    width: 100%;
+  }
+
+  .statistics-key {
+    width: 150px;
   }
 }
