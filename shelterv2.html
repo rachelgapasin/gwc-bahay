@@ -25,7 +25,8 @@
       src="https://kit.fontawesome.com/a0c35383ef.js"
       crossorigin="anonymous"
     ></script>
-    <title>About Bahay</title>
+    <title>Shelters - Bahay</title>
+    <script type="text/javascript" src=".vscode\display.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-sm bg-light fixed-top">
@@ -45,8 +46,8 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a class="nav-link" aria-current="page" href="/">Home</a>
-            <a class="nav-link active" href="/about.html">About</a>
-            <a class="nav-link" href="/shelters.html">Shelters</a>
+            <a class="nav-link" href="/about.html">About</a>
+            <a class="nav-link active" href="/shelterv2.html">Shelters</a>
             <a class="nav-link" href="/get-involved.html">Get Involved</a>
             <a class="nav-link" href="/veterans.html">Veterans</a>
             <a class="nav-link" href="/contact.html">Contact</a>
@@ -54,57 +55,109 @@
         </div>
       </div>
     </nav>
-    <header class="secondary">
-      <h1>About Bahay</h1>
+    <header
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url('../images/volunteer-donations.jpeg');
+      "
+    >
+      <h1>Shelters in NJ</h1>
       <h2>
         Welcome to Bahay, where compassion meets action in the fight against
         homelessness.
       </h2>
     </header>
     <main>
-      <section class="secondary">
-        <div class="row gx-5 gy-3">
-          <div class="col-sm-6">
-            <h3>What We Offer</h3>
-            <h4 class="mt-3">Shelter Directory</h4>
-            <p class="mt-2">
-              Discover a comprehensive directory of shelters across New Jersey.
-              Whether you're looking for a place to stay or want to volunteer
-              your time, Bahay is your go-to resource.
-            </p>
-            <h4 class="mt-3">Volunteer Opportunities</h4>
-            <p class="mt-2">
-              Bahay makes it easy for you to make a difference. Explore diverse
-              volunteer opportunities at local shelters and organizations, and
-              join us in creating positive change.
-            </p>
+      <section class="grid grid-2-columns">
+        <div class="shelter-info grid grid-2-columns-md-only">
+
+          <!-- Shelter Container was added  -->
+          <div id="shelterContainer">
+            <div class="shelter">
+            <h2>Shelter Name</h2>
+            
           </div>
-          <div class="col-sm-6">
-            <h3>Our Mission</h3>
-            <p class="mt-2">
-              At Bahay, we believe in the power of community, kindness, and
-              hope. Our mission is simple yet profound—to spread awareness about
-              homelessness in New Jersey and provide practical solutions to
-              address this pressing issue. We envision a world where every
-              person has a safe and warm place to call home.
-            </p>
           </div>
         </div>
-      </section>
-      <section class="text-center">
-        <h3 class="col-10 offset-1 special-styling">
-          Join Us in Making a Difference
-        </h3>
-        <p class="mt-3">
-          Bahay is more than a website; it's a community of compassionate
-          individuals united in the pursuit of a world without homelessness.
-          Join us on this journey, and together, let's make a lasting impact—one
-          shelter, one volunteer, one act of kindness at a time.
-        </p>
-        <p class="mt-3">Thank you for being a part of the Bahay family.</p>
-        <p class="mt-3">
-          Together, we can build a brighter and more compassionate future.
-        </p>
+
+        <div>
+          <!-- Made sure to add back the add a listing portion -->
+          <p class="text-center">Don't see a shelter listed?</p>
+          <h3 class="text-center mt-2">Add a Listing</h3>
+          <form
+            class="thin mt-2 mb-4"
+            action="https://formsubmit.co/rachelgapasinn@gmail.com"
+            method="POST"
+          >
+            <div>
+              <label for="name"
+                >Name<span class="required-field">*</span></label
+              >
+              <br />
+              <input
+                type="text"
+                name="name"
+                class="text-box"
+                id="name"
+                required
+              />
+            </div>
+            <div>
+              <label for="address"
+                >Address<span class="required-field">*</span></label
+              >
+              <br />
+              <input
+                type="text"
+                name="address"
+                class="text-box"
+                id="address"
+                required
+              />
+            </div>
+            <div>
+              <label for="open-hours"
+                >Open hours (if unknown, type “TBA”)<span class="required-field"
+                  >*</span
+                ></label
+              >
+              <br />
+              <textarea
+                name="open-hours"
+                class="text-box"
+                id="open-hours"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <label for="shelter-phone-number"
+                >Phone number<span class="required-field">*</span></label
+              >
+              <br />
+              <input
+                type="tel"
+                name="shelter-phone-number"
+                class="text-box"
+                id="shelter-phone-number"
+                required
+              />
+            </div>
+            <div>
+              <label for="additional-info">Additional information</label>
+              <br />
+              <textarea
+                name="additional-info"
+                class="text-box"
+                id="additional-info"
+                rows="4"
+              ></textarea>
+            </div>
+            <input type="submit" class="btn" />
+          </form>
+        </div>
       </section>
     </main>
     <footer>
