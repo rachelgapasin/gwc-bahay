@@ -254,7 +254,7 @@ footer a {
 .all-shelters-link {
   background-color: transparent;
   border: 1px solid var(--primary-color);
-  border-radius: 50%;
+  border-radius: 50px;
   color: var(--primary-color);
   display: block;
   height: fit-content;
@@ -274,7 +274,7 @@ footer a {
   aspect-ratio: 1 / 1;
   background-color: var(--secondary-color);
   border: 1px solid var(--primary-color);
-  border-radius: 50px;
+  border-radius: 50%;
   color: var(--primary-color);
   margin: 0 3px;
   transition: 170ms;
