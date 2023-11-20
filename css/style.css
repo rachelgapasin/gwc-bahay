@@ -203,19 +203,6 @@ label {
   width: 200px;
 }
 
-.all-shelters-link {
-  background-color: transparent;
-  border: 1px solid var(--primary-color);
-  border-radius: 50px;
-  color: var(--primary-color);
-  display: block;
-  height: fit-content;
-  margin: 10px auto;
-  padding: 5px 15px;
-  text-decoration: none;
-  width: fit-content;
-}
-
 footer {
   background-color: #fff;
 }
@@ -264,7 +251,27 @@ footer a {
   margin-bottom: 20px;
 }
 
+.all-shelters-link {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  color: var(--primary-color);
+  display: block;
+  height: fit-content;
+  margin: 10px auto;
+  padding: 5px 15px;
+  text-decoration: none;
+  transition: 200ms;
+  width: fit-content;
+}
+
+.all-shelters-link:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
 #page-buttons button {
+  aspect-ratio: 1 / 1;
   background-color: var(--secondary-color);
   border: 1px solid var(--primary-color);
   border-radius: 50px;

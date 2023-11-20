@@ -14,6 +14,7 @@ function displaySheltersByPage(page, city) {
   if (city && sheltersToDisplay.length === 0) {
     // No results for the searched city
     const noResultsMessage = `
+      <a href="/shelters.html" class="all-shelters-link mb-4">Show All Shelters</a>
       <div id="no-results">
         <div class="text-center text-lg-start">
           <strong>Sorry, we couldn't find any results for
