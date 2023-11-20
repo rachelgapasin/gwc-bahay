@@ -204,8 +204,10 @@ label {
 }
 
 .all-shelters-link {
+  background-color: transparent;
   border: 1px solid var(--primary-color);
   border-radius: 50px;
+  color: var(--primary-color);
   display: block;
   height: fit-content;
   margin: 10px auto;
@@ -338,7 +340,7 @@ footer a {
   section {
     padding: 30px;
   }
-  
+
   .statistics-map {
     width: 500px;
   }
