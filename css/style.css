@@ -264,10 +264,32 @@ footer a {
   margin-bottom: 20px;
 }
 
+#page-buttons button {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  color: var(--primary-color);
+  margin: 0 3px;
+}
+
+#page-buttons button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
 #shelter-container {
   margin: auto;
-  max-height: 1000px;
-  overflow-y: auto;
+  /* max-height: 1000px;
+  overflow-y: auto; */
+}
+
+#no-results {
+  line-height: 1.7;
+}
+
+#no-results ul{
+  max-width: 400px;
+  text-align: start;
 }
 
 #soup-kitchen-container {
