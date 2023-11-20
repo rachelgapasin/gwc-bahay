@@ -44,6 +44,28 @@
     "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9862943617245!2d-74.03124009999999!3d40.740327099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2575f90a7217f%3A0x63e7f0e630ce1502!2sThe%20Hoboken%20Shelter!5e0!3m2!1sen!2sus!4v1700425371990!5m2!1sen!2sus"
   },
   {
+    "name": "Answers Moving Forward Inc",
+    "address": "712 Springfield Ave",
+    "city": "Newark",
+    "state": "NJ",
+    "zipCode": "07103",
+    "hours": "TBA",
+    "phoneNumber": "(973) 416-2679",
+    "volunteerStatus": "open",
+    "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12093.861109013518!2d-74.22493206743312!3d40.729786444157774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2534a5e7a4b5f%3A0x31b87a5bcae994d7!2sAnswers%20Moving%20Forward%20Inc!5e0!3m2!1sen!2sus!4v1700467017474!5m2!1sen!2sus"
+  },
+  {
+    "name": "Apostle's House",
+    "address": "513 Avon Ave",
+    "city": "Newark",
+    "state": "NJ",
+    "zipCode": "07108",
+    "hours": "TBA",
+    "phoneNumber": "(973) 375-7447",
+    "volunteerStatus": "open",
+    "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24188.039560595178!2d-74.23257506044922!3d40.7289134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2534a80ef7efd%3A0xdab38b8c41abd51b!2sApostle&#39;s%20House!5e0!3m2!1sen!2sus!4v1700519470870!5m2!1sen!2sus"
+  },
+  {
     "name": "Circle of Life Shelter",
     "address": "55 Reeves Pl",
     "city": "Newark",
@@ -53,6 +75,17 @@
     "phoneNumber": "(862) 763-4859",
     "volunteerStatus": "open",
     "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.008789757241!2d-74.20951079999999!3d40.717822999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2533035bf1ac3%3A0x41068aa355a7869c!2sCircle%20of%20Life%20Shelter!5e0!3m2!1sen!2sus!4v1696652289388!5m2!1sen!2sus"
+  },
+  {
+    "name": "Helping the Homeless Inc",
+    "address": "269 Mt Prospect Ave",
+    "city": "Newark",
+    "state": "NJ",
+    "zipCode": "07104",
+    "hours": "TBA",
+    "phoneNumber": "(973) 732-9200",
+    "volunteerStatus": "open",
+    "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.0563075452883!2d-74.17576362324562!3d40.76078627138635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2548ae7074d43%3A0x8340fe989350fcb4!2sHelping%20the%20Homeless%20Inc!5e0!3m2!1sen!2sus!4v1698448267457!5m2!1sen!2sus"
   },
   {
     "name": "New Community Harmony House",
@@ -66,15 +99,37 @@
     "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.046452152958!2d-74.19841562324649!3d40.73900337138962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2535dbe284bfd%3A0xd12c1a894ae0f475!2sNew%20Community%20Harmony%20House!5e0!3m2!1sen!2sus!4v1698448228344!5m2!1sen!2sus"
   },
   {
-    "name": "Helping the Homeless Inc",
-    "address": "269 Mt Prospect Ave",
+    "name": "Newly Destinied Inc",
+    "address": "1114 Broad St",
     "city": "Newark",
     "state": "NJ",
-    "zipCode": "07104",
+    "zipCode": "07114",
     "hours": "TBA",
-    "phoneNumber": "(973) 732-9200",
+    "phoneNumber": "(973) 242-8088",
     "volunteerStatus": "open",
-    "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.0563075452883!2d-74.17576362324562!3d40.76078627138635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2548ae7074d43%3A0x8340fe989350fcb4!2sHelping%20the%20Homeless%20Inc!5e0!3m2!1sen!2sus!4v1698448267457!5m2!1sen!2sus"
+    "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.749380955371!2d-74.17891!3d40.7235333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c253779cdd879f%3A0xa2aabf1d22639bcb!2sNewly%20Destinied%20Inc!5e0!3m2!1sen!2sus!4v1700466194256!5m2!1sen!2sus"
+  },
+  {
+    "name": "St Ann's Shelter",
+    "address": "366 S 7th St",
+    "city": "Newark",
+    "state": "NJ",
+    "zipCode": "07103",
+    "hours": "TBA",
+    "phoneNumber": "(973) 242-6646",
+    "volunteerStatus": "open",
+    "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12092.736554962561!2d-74.20941076742915!3d40.735973544143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c253434c4f1e45%3A0x7bcb7a24d9d432d3!2sSt%20Ann&#39;s%20Shelter!5e0!3m2!1sen!2sus!4v1700466341531!5m2!1sen!2sus"
+  },
+  {
+    "name": "St Rocco's",
+    "address": "368 S 7th St",
+    "city": "Newark",
+    "state": "NJ",
+    "zipCode": "07103",
+    "hours": "24 hours",
+    "phoneNumber": "(973) 286-4175",
+    "volunteerStatus": "open",
+    "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12092.72568515451!2d-74.20951766742901!3d40.73603334414288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c253434c33f66f%3A0x61b448c26502c183!2sSt%20Rocco&#39;s!5e0!3m2!1sen!2sus!4v1700466891454!5m2!1sen!2sus"
   },
   {
     "name": "Covenant House New Jersey",

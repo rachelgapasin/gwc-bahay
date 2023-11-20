@@ -267,9 +267,10 @@ footer a {
 #page-buttons button {
   background-color: var(--secondary-color);
   border: 1px solid var(--primary-color);
-  border-radius: 50%;
+  border-radius: 50px;
   color: var(--primary-color);
   margin: 0 3px;
+  transition: 170ms;
 }
 
 #page-buttons button:hover {
@@ -287,7 +288,7 @@ footer a {
   line-height: 1.7;
 }
 
-#no-results ul{
+#no-results ul {
   max-width: 400px;
   text-align: start;
 }
