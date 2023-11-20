@@ -4,6 +4,10 @@ const sheltersPerPage = 5;
 let currentPage = 1;
 let sheltersData = [];
 
+function capitalizeFirstLetter(str) {
+  return str.replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
 function displaySheltersByPage(page, city) {
   shelterContainer.innerHTML = "";
 
@@ -12,13 +16,15 @@ function displaySheltersByPage(page, city) {
   const sheltersToDisplay = sheltersData.slice(startIndex, endIndex);
 
   if (city && sheltersToDisplay.length === 0) {
+    const formattedCity = capitalizeFirstLetter(city);
+
     // No results for the searched city
     const noResultsMessage = `
       <a href="/shelters.html" class="all-shelters-link mb-4">Show All Shelters</a>
       <div id="no-results">
         <div class="text-center text-lg-start">
           <strong>Sorry, we couldn't find any results for
-          <span class="special-color">${city}</span>.</strong>
+          <span class="special-color">${formattedCity}</span>.</strong>
         </div>
         <div class="text-center text-lg-start">Reasons for getting no results:</div>
         <ul class="m-auto m-lg-0">
@@ -33,16 +39,16 @@ function displaySheltersByPage(page, city) {
     shelterContainer.innerHTML += noResultsMessage;
   } else {
     if (city) {
+      const formattedCity = capitalizeFirstLetter(city);
+
       // Display additional information for the searched city
       const cityInfo = `
-        <div class="row m-auto">
-          <h3 class="text-center">Showing Shelters in ${city
-            .charAt(0)
-            .toUpperCase()}${city.slice(1)}, NJ</h3>
-          <br />
-          <a href="/shelters.html" class="all-shelters-link mb-4">Show All Shelters</a>
-        </div>
-      `;
+      <div class="row m-auto">
+        <h3 class="text-center">Showing Shelters in ${formattedCity}, NJ</h3>
+        <br />
+        <a href="/shelters.html" class="all-shelters-link mb-4">Show All Shelters</a>
+      </div>
+    `;
       shelterContainer.innerHTML += cityInfo;
     }
 
