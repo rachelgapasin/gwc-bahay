@@ -285,6 +285,19 @@ footer a {
   color: var(--secondary-color);
 }
 
+#page-input {
+  border: 1px solid #000;
+  border-radius: 4px;
+  color: var(--primary-color);
+  text-align: center;
+  width: 20px;
+}
+
+#page-input:focus {
+  border: 1px solid var(--primary-color);
+  outline: 1px solid #87b9ff;
+}
+
 #shelter-container {
   margin: auto;
   /* max-height: 1000px;

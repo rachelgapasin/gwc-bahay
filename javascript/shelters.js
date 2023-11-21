@@ -75,7 +75,24 @@ function displaySheltersByPage(page, city) {
     // Display current page number and total pages
     const totalPages = Math.ceil(sheltersData.length / sheltersPerPage);
     const currentPageElement = document.getElementById("current-page");
-    currentPageElement.textContent = `Page ${page} of ${totalPages}`;
+    currentPageElement.innerHTML = `
+      <label for="page-input">Page </label>
+      <input type="text" id="page-input" value="${page}" min="1" max="${totalPages}">
+      <span> of ${totalPages}</span>
+    `;
+
+    const pageInput = document.getElementById("page-input");
+    pageInput.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+
+        // Get the entered page number
+        const enteredPage = parseInt(pageInput.value, 10);
+
+        // Display shelters for the entered page
+        displaySheltersByPage(enteredPage, city);
+      }
+    });
   }
 
   // Display pagination buttons only if there are more than one page
@@ -84,6 +101,13 @@ function displaySheltersByPage(page, city) {
     pageButtons.style.display = "block";
   } else {
     pageButtons.style.display = "none";
+  }
+
+  // Scroll to the top of the results
+  const scrollToElement = document.getElementById("search-form");
+
+  if (scrollToElement) {
+    scrollToElement.scrollIntoView({ behavior: "smooth" });
   }
 }
 
@@ -117,7 +141,7 @@ function fetchAllShelters() {
     .catch((error) => console.error("Error fetching JSON:", error));
 }
 
-function displaySearchResults(city) {
+function searchCity(city) {
   currentPage = 1; // Reset current page when performing a new search
 
   fetch("/javascript/shelters.json")
@@ -143,5 +167,5 @@ const searchForm = document.getElementById("search-form");
 searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const city = document.querySelector("#city").value;
-  displaySearchResults(city);
+  searchCity(city);
 });
