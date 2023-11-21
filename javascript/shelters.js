@@ -76,9 +76,10 @@ function displaySheltersByPage(page, city) {
     const totalPages = Math.ceil(sheltersData.length / sheltersPerPage);
     const currentPageElement = document.getElementById("current-page");
     currentPageElement.innerHTML = `
-      <label for="page-input">Page </label>
+      <label for="page-input">Page 
       <input type="text" id="page-input" value="${page}" min="1" max="${totalPages}">
-      <span> of ${totalPages}</span>
+      of ${totalPages}
+      </label>
     `;
 
     const pageInput = document.getElementById("page-input");

@@ -298,6 +298,10 @@ footer a {
   outline: 1px solid #87b9ff;
 }
 
+#current-page label {
+  margin: 0;
+}
+
 #shelter-container {
   margin: auto;
   /* max-height: 1000px;
