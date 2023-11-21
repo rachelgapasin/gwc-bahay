@@ -154,6 +154,17 @@
     "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.617512740823!2d-74.4426659232994!3d39.36489747162805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0ee44cefcc917%3A0xd62bee2e0bed2903!2sAtlantic%20City%20Rescue%20Mission!5e0!3m2!1sen!2sus!4v1698448005071!5m2!1sen!2sus"
   },
   {
+    "name": "Turning Point Day Center for the Homeless",
+    "address": "1717 Leeds Ave",
+    "city": "Atlantic City",
+    "state": "NJ",
+    "zipCode": "08401",
+    "hours": "Mon-Sat 9AM-3PM",
+    "phoneNumber": "(609) 246-6080",
+    "volunteerStatus": "open",
+    "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d781926.0888507956!2d-74.98915220228206!3d40.04420070337755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0ee45ca300001%3A0x2fa51b6eb7e8b912!2sTurning%20Point%20Day%20Center%20for%20the%20Homeless!5e0!3m2!1sen!2sus!4v1700532124975!5m2!1sen!2sus"
+  },
+  {
     "name": "Rescue Mission",
     "address": "98 Carroll St",
     "city": "Trenton",
@@ -218,6 +229,28 @@
     "phoneNumber": "(973) 279-1005",
     "volunteerStatus": "open",
     "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.1899666487525!2d-74.17360912323977!3d40.91158047136417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2fdcd33e9ef33%3A0xc1750bfa5e6d189!2sEva&#39;s%20Emergency%20Overnight!5e0!3m2!1sen!2sus!4v1698448510844!5m2!1sen!2sus"
+  },
+  {
+    "name": "Eva's Village",
+    "address": "393 Main St",
+    "city": "Paterson",
+    "state": "NJ",
+    "zipCode": "07501",
+    "hours": "Mon-Fri 9AM-5PM",
+    "phoneNumber": "(973) 523-6220",
+    "volunteerStatus": "open",
+    "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12060.63717573!2d-74.18204973905499!3d40.91225305776267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2fdcd3d5f1933%3A0x31352516ad9d43b7!2sEva&#39;s%20Village!5e0!3m2!1sen!2sus!4v1700532703222!5m2!1sen!2sus"
+  },
+  {
+    "name": "Good Shepherd-Mission Inc",
+    "address": "336 Broadway",
+    "city": "Paterson",
+    "state": "NJ",
+    "zipCode": "07501",
+    "hours": "TBA",
+    "phoneNumber": "(973) 742-9244",
+    "volunteerStatus": "open",
+    "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12059.534758474108!2d-74.1705893390503!3d40.91829605626654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2fc481c121c75%3A0x753e9a181e6da68a!2sGood%20Shepherd-Mission%20Inc!5e0!3m2!1sen!2sus!4v1700533006687!5m2!1sen!2sus"
   },
   {
     "name": "Hispanic Multi Purpose Services Center",
