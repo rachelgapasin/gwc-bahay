@@ -41,10 +41,14 @@ function displaySheltersByPage(page, city) {
     if (city) {
       const formattedCity = capitalizeFirstLetter(city);
 
+      const numberOfResults = sheltersData.length;
+      const resultsText = numberOfResults === 1 ? "result" : "results";
+
       // Display additional information for the searched city
       const cityInfo = `
       <div class="row m-auto">
         <h3 class="text-center">Showing Shelters in ${formattedCity}, NJ</h3>
+        <p class="text-center">${sheltersData.length} ${resultsText}</p>
         <br />
         <a href="/shelters.html" class="all-shelters-link mb-4">Show All Shelters</a>
       </div>
