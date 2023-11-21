@@ -16,17 +16,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/shelters-quiz.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <script
       src="https://kit.fontawesome.com/a0c35383ef.js"
       crossorigin="anonymous"
     ></script>
-    <title>Shelters - Bahay</title>
+    <title>Bahay NJ</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md bg-light fixed-top">
@@ -45,7 +45,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" aria-current="page" href="/">Home</a>
             <a class="nav-link" href="/about.html">About</a>
             <div class="nav-item dropdown">
               <a
@@ -83,132 +83,130 @@
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)
           ),
-          url('/images/volunteer-donations.jpeg');
+          url('../images/volunteer-soup-kitchen.png');
       "
     >
-      <h1>Shelters in NJ</h1>
-      <h2>
-        Welcome to Bahay, where compassion meets action in the fight against
-        homelessness.
-      </h2>
+      <h1>Shelters Quiz</h1>
+      <h2>Want to learn more about Homeless Shelters? Test your knowledge!</h2>
     </header>
-    <main>
-      <section>
-        <form id="search-form" style="max-width: 600px">
-          <label for="city"
-            >Want to find shelters in a specific city? Enter the city
-            below:</label
-          >
-          <input
-            type="search"
-            class="text-box"
-            id="city"
-            placeholder="e.g. Jersey City"
-            autocomplete="off"
-          />
-        </form>
-        <div class="row mt-4 mt-md-5">
-          <div class="col-lg-7">
-            <div
-              class="row text-center text-md-start"
-              id="shelter-container"
-            ></div>
-            <div id="page-buttons" class="mt-0 text-center">
-              <button id="prev-page">
-                <i class="fa-solid fa-arrow-left"></i>
-              </button>
-              <span id="current-page"></span>
-              <button id="next-page">
-                <i class="fa-solid fa-arrow-right"></i>
-              </button>
+    <body onload="NextQuestion(0)">
+      <main>
+        <section>
+          <!-- creating a modal for when quiz ends -->
+          <div class="modal-container" id="score-modal">
+            <div class="modal-content-container" id="score-content-modal">
+              <h1>Congratulations, Quiz Completed.</h1>
+
+              <div class="grade-details">
+                <p>Attempts: 10</p>
+                <p>Wrong Answers: <span id="wrong-answers"></span></p>
+                <p>Right Answers: <span id="right-answers"></span></p>
+                <p>Grade: <span id="grade-percentage"></span>%</p>
+                <p><span id="remarks"></span></p>
+              </div>
+
+              <div class="modal-button-container">
+                <button onclick="closeScoreModal()">Continue</button>
+              </div>
             </div>
           </div>
-          <div class="col-lg-5">
-            <p class="text-center mt-5 mt-lg-0">Don't see a shelter listed?</p>
-            <h3 class="text-center mt-2">Add a Listing</h3>
-            <form
-              class="thin mt-2 mb-4"
-              action="https://formsubmit.co/rachelgapasinn@gmail.com"
-              method="POST"
-            >
+
+          <div class="game-quiz-container row">
+            <div class="game-details-container row mb-4">
+              <div class="col-6">Score: <span id="player-score"></span>/10</div>
+              <div class="col-6">
+                Question: <span id="question-number"></span>/10
+              </div>
+            </div>
+
+            <div class="game-question-container row">
+              <div id="display-question"></div>
+            </div>
+
+            <div class="modal-container" id="option-modal">
+              <div class="modal-content-container">
+                <p>Please select an option.</p>
+              </div>
+            </div>
+
+            <div class="game-options-container row">
               <div>
-                <label for="name"
-                  >Name<span class="required-field">*</span></label
-                >
-                <br />
                 <input
-                  type="text"
-                  name="name"
-                  class="text-box"
-                  id="name"
-                  placeholder="Safe Haven Shelter"
-                  required
+                  type="radio"
+                  id="option-one"
+                  name="option"
+                  class="radio"
+                  value="optionA"
                 />
+                <label
+                  for="option-one"
+                  class="option"
+                  id="option-one-label"
+                ></label>
               </div>
+
               <div>
-                <label for="address"
-                  >Address<span class="required-field">*</span></label
-                >
-                <br />
                 <input
-                  type="text"
-                  name="address"
-                  class="text-box"
-                  id="address"
-                  placeholder="123 Hope Street, Cityville, State 98765"
-                  required
+                  type="radio"
+                  id="option-two"
+                  name="option"
+                  class="radio"
+                  value="optionB"
                 />
+                <label
+                  for="option-two"
+                  class="option"
+                  id="option-two-label"
+                ></label>
               </div>
+
               <div>
-                <label for="open-hours"
-                  >Open hours (if unknown, type “TBA”)<span
-                    class="required-field"
-                    >*</span
-                  ></label
-                >
-                <br />
-                <textarea
-                  name="open-hours"
-                  class="text-box"
-                  id="open-hours"
-                  placeholder="Mon-Fri 8AM-6PM, Sat 9AM-4PM"
-                  required
-                ></textarea>
-              </div>
-              <div>
-                <label for="shelter-phone-number">Phone number</label>
-                <div>
-                  <small
-                    >*Due to confirmation purposes, we may not be able to add a
-                    shelter to our list if you do not provide its phone number,
-                    so please do your best to fill in this field!</small
-                  >
-                </div>
                 <input
-                  type="tel"
-                  name="shelter-phone-number"
-                  class="text-box"
-                  id="shelter-phone-number"
-                  placeholder="(555) 987-6543"
+                  type="radio"
+                  id="option-three"
+                  name="option"
+                  class="radio"
+                  value="optionC"
                 />
+                <label
+                  for="option-three"
+                  class="option"
+                  id="option-three-label"
+                ></label>
               </div>
+
               <div>
-                <label for="additional-info">Additional information</label>
-                <br />
-                <textarea
-                  name="additional-info"
-                  class="text-box"
-                  id="additional-info"
-                  placeholder="This shelter provides warm meals, clean beds, and support services for those in need."
-                  rows="4"
-                ></textarea>
+                <input
+                  type="radio"
+                  id="option-four"
+                  name="option"
+                  class="radio"
+                  value="optionD"
+                />
+                <label
+                  for="option-four"
+                  class="option"
+                  id="option-four-label"
+                ></label>
               </div>
-              <input type="submit" class="btn" />
-            </form>
+            </div>
+
+            <div class="next-button-container mt-4">
+              <button onclick="handleNextQuestion()">Next Question</button>
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
+          <div class="mt-2 text-center">
+            Source:
+            <a
+              href="https://www.backpacksusa.com/blogs/blog/eight-different-types-of-homeless-shelters" target="_blank"
+            >
+              Homeless Shelter
+            </a>
+          </div>
+        </section>
+      </main>
+      <script src="/javascript/shelters-quiz.js"></script>
+    </body>
     <footer>
       <div class="contact-box">
         <h3>Want to ask us a question?</h3>
@@ -235,6 +233,5 @@
         </div>
       </div>
     </footer>
-    <script src="/javascript/shelters.js"></script>
   </body>
 </html>
