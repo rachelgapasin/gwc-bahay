@@ -30,7 +30,7 @@ function displaySheltersByPage(page, city) {
         <ul class="m-auto m-lg-0">
           <li>You mispelled the city's name.</li>
           <li>
-            Our database does not contain any shelters for this city.
+            Our database does not contain any shelters for this city. (Feel free to help us out by filling out our shelter form that's located on this page!)
           </li>
           <li>This city is not in New Jersey.</li>
         </ul>

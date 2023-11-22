@@ -20,14 +20,13 @@ const questions = [
 
   {
     question:
-      "Shelters that look like Women shelters, that allow men with children and two-parent families the opportunities to stay.",
+      "Shelters that look like Women shelters and that allow men with children and two-parent families the opportunities to stay.",
     optionA: "Prototypical Shelter",
     optionB: "Emergency Shelter",
     optionC: "Youth Shelters",
     optionD: "Family Shelters",
     correctOption: "optionD",
   },
-
   {
     question:
       "Shelters that house people overnight if they come in drunk instead of forcing people to quit drinking. Gives a place to stay while they experience abuse of drugs and alcohol.",
@@ -37,7 +36,6 @@ const questions = [
     optionD: "Youth Shelters",
     correctOption: "optionC",
   },
-
   {
     question:
       "Shelters that allows people to recover from trauma and restart their life. It is a more comfortable and private houseing that's temporary in nature.",
@@ -47,7 +45,6 @@ const questions = [
     optionD: "Permanent Supportive Housing",
     correctOption: "optionD",
   },
-
   {
     question:
       "Shelters that is the most established form of housing assistance. Provides affordable housing to those who can't afford much even with a job.",
@@ -57,7 +54,6 @@ const questions = [
     optionD: "Faith-Based",
     correctOption: "optionB",
   },
-
   {
     question:
       "Shelters that are faith-based to introduce residents to their values and beliefs during their stay.",
@@ -67,17 +63,15 @@ const questions = [
     optionD: "Wet Shelters",
     correctOption: "optionB",
   },
-
   {
     question:
-      "Shelters that house women, and their children who are also abuse victims.",
+      "Shelters that house women and their children who are also abuse victims.",
     optionA: "Emergency Shelter",
     optionB: "Youth Shelters",
     optionC: "Domestic Violence or Women Shelters",
     optionD: "Wet Shelters",
     correctOption: "optionC",
   },
-
   {
     question:
       "Shelter that gives people the chance to gain experience as a tenant while benefitting from social services.",
@@ -87,7 +81,6 @@ const questions = [
     optionD: "Domestic Violence or Women Shelters",
     correctOption: "optionC",
   },
-
   {
     question:
       "Shelters that may receive bulk hygiene kits and other mobile resources to help them during their time on the street.",
@@ -97,17 +90,15 @@ const questions = [
     optionD: "Wet Shelters",
     correctOption: "optionA",
   },
-
   {
     question:
-      "The goal of the shelter is to intervene early while young adults are still developing in order to set a foundation for their successful and happy lives",
+      "The goal of the shelter is to intervene early while young adults are still developing in order to set a foundation for their successful and happy lives.",
     optionA: "Youth Shelters",
     optionB: "Wet Shelters",
     optionC: "Transitional Housing",
     optionD: "Permanent Supportive Housing",
     correctOption: "optionA",
   },
-
   {
     question:
       "What ages do women experience the highest rates of domestic abuse?",
@@ -117,47 +108,42 @@ const questions = [
     optionD: "21 and below.",
     correctOption: "optionA",
   },
-
   {
     question:
-      "This shelter functions as a day shelter, and temporary residents can also stay the night. To also keep out the harm from the environment outside.",
+      "This shelter functions as a day shelter, and temporary residents can also stay the night to keep out the harm from the environment outside.",
     optionA: "Wet Shelters",
     optionB: "Prototypical Shelters",
     optionC: "Faith-Based",
     optionD: "Emergency Shelters",
     correctOption: "optionD",
   },
-
   {
     question:
-      "This shelter shows guests the faith that motivates the shelter to help people and which gives people hope",
+      "This shelter shows guests the faith that motivates the shelter to help people and which gives people hope.",
     optionA: "Faith-Based",
     optionB: "Wet Shelters",
     optionC: "Prototypical Shelter",
     optionD: "Domestic Violece or Women's Shelters",
     correctOption: "optionA",
   },
-
   {
     question:
-      "This shelter involves giving job assistance, financial counceling and affordable housing",
+      "This shelter involves giving job assistance, financial counceling, and affordable housing.",
     optionA: "Emergency Shelter",
     optionB: "Domestic Violence or Women's Shelters",
     optionC: "Permanent Supportive Housing",
     optionD: "Transitional Housing",
     correctOption: "optionD",
   },
-
   {
     question:
-      "This shelter provides counceling services, resources, and education abou relationship dynamics. Helps identify abusive relationships and separate from a current abuser. ?",
+      "This shelter provides counceling services, resources, and education about relationship dynamics. It helps identify abusive relationships and how to separate from a current abuser.",
     optionA: "Wet Shelters",
     optionB: "Domestic Violence or Women's Shelters",
     optionC: "Youth Shelters",
     optionD: "Faith-Based",
     correctOption: "optionB",
   },
-
   {
     question:
       "Provides previously homeless people with resource that orient them away from homelessness like job assistance.",
@@ -167,17 +153,15 @@ const questions = [
     optionD: "Wet Shelters",
     correctOption: "optionB",
   },
-
   {
     question:
-      "Short sermons before taking part in meals or receiving a ticket for a bed.",
+      "This shelter includes short sermons before taking part in meals or receiving a ticket for a bed.",
     optionA: "Family Shelters",
     optionB: "Transitional Housing",
     optionC: "Permanent Supportive Housing",
     optionD: "Faith-Based",
     correctOption: "optionD",
   },
-
   {
     question:
       "This shelter model provides secure and private living spaces for a percentage of their income rather than a set amount each month.",
@@ -187,17 +171,15 @@ const questions = [
     optionD: "Permanent Supportive Housing",
     correctOption: "optionD",
   },
-
   {
     question:
       "Which shelters are for time-bound circumstances rather than for those afflicted by chronic homelessness?",
     optionA: "Domestic Violence or Women's Shelters",
     optionB: "Wet Shelters",
     optionC: "Transitional Housing",
-    optionD: "Prototypical Shelter",
+    optionD: "Prototypical Shelters",
     correctOption: "optionD",
   },
-
   {
     question: "Which Shelter is a subset of emergency shelters?",
     optionA: "Wet Shelters",
@@ -206,7 +188,6 @@ const questions = [
     optionD: "Prototypical Shelters",
     correctOption: "optionC",
   },
-
   {
     question:
       "This housing can be for anyone, or with the purpose of specifically assisting a certain demographic of people in need.",
@@ -216,17 +197,15 @@ const questions = [
     optionD: "Youth Shelters",
     correctOption: "optionB",
   },
-
   {
     question:
-      "Which shelter is somewhat controversial for people who stay overnight?",
+      "Which shelter is somewhat controversial because of who they house overnight?",
     optionA: "Transitional Housing",
     optionB: "Permanent Supportive Housing",
     optionC: "Domestic Violence or Women’s Shelters",
     optionD: "Wet Shelters",
     correctOption: "optionD",
   },
-
   {
     question:
       "Shelters that are most common in war-torn regions with large refugee populations.",
