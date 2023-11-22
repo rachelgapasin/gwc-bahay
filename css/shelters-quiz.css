@@ -26,6 +26,10 @@ footer {
   text-align: center;
 }
 
+.game-details-container div {
+  padding: 0;
+}
+
 .game-question-container {
   align-items: center;
   background-color: var(--primary-color);
@@ -174,8 +178,12 @@ input[type="radio"]:checked ~ .option {
 }
 
 @media (max-width: 575px) {
-  .game-quiz-container {
+  section {
     padding: 20px;
+  }
+
+  .game-quiz-container {
+    padding: 30px 15px;
   }
 
   .game-options-container {
