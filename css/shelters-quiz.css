@@ -3,13 +3,25 @@
   --secondary-color: #d8e8ff;
 }
 
+section,
+footer {
+  background: linear-gradient(
+    89deg,
+    rgb(172, 202, 246) 0%,
+    rgb(216, 232, 255) 48%,
+    rgb(172, 202, 246) 97%
+  );
+}
+
 .game-quiz-container {
   align-items: center;
-  background-color: var(--secondary-color);
+  background-color: #ffffff65;
   border-radius: 10px;
+  box-shadow: rgba(126, 126, 137, 0.2) 0px 7px 29px 0px;
+  filter: blur();
   flex-direction: column;
   margin: auto;
-  max-width: 500px;
+  max-width: 700px;
   padding: 30px;
   text-align: center;
 }
@@ -63,6 +75,7 @@ input[type="radio"] {
 
 input[type="radio"]:checked ~ .option {
   color: var(--primary-color);
+  font-weight: 600;
 }
 
 .next-button-container button {
@@ -161,6 +174,10 @@ input[type="radio"]:checked ~ .option {
 }
 
 @media (max-width: 575px) {
+  .game-quiz-container {
+    padding: 20px;
+  }
+
   .game-options-container {
     grid-template-columns: 1fr;
   }

@@ -242,7 +242,7 @@ let shuffledQuestions = []; //empty array to hold shuffled selected questions ou
 
 function handleQuestions() {
   //function to shuffle and push 10 questions to shuffledQuestions array
-  //app would be dealing with 10questions per session
+  //app would be dealing with 10 questions per session
   while (shuffledQuestions.length <= 9) {
     const random = questions[Math.floor(Math.random() * questions.length)];
     if (!shuffledQuestions.includes(random)) {
@@ -307,6 +307,7 @@ function checkForAnswer() {
   options.forEach((option) => {
     if (option.checked === true && option.value === currentQuestionAnswer) {
       document.getElementById(correctOption).style.color = "green";
+      document.getElementById(correctOption).style.fontWeight = "600";
       playerScore++; //adding to player's score
       indexNumber++; //adding 1 to index so has to display next question..
       //set to delay question number till when next question loads
@@ -317,6 +318,8 @@ function checkForAnswer() {
       const wrongLabelId = option.labels[0].id;
       document.getElementById(wrongLabelId).style.color = "red";
       document.getElementById(correctOption).style.color = "green";
+      document.getElementById(wrongLabelId).style.fontWeight = "600";
+      document.getElementById(correctOption).style.fontWeight = "600";
       wrongAttempt++; //adds 1 to wrong attempts
       indexNumber++;
       //set to delay question number till when next question loads
@@ -348,6 +351,7 @@ function resetOptionBackground() {
   const options = document.getElementsByName("option");
   options.forEach((option) => {
     document.getElementById(option.labels[0].id).style.color = "";
+    document.getElementById(option.labels[0].id).style.fontWeight = "";
   });
 }
 

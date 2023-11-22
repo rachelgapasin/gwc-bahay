@@ -204,7 +204,9 @@ label {
 }
 
 footer {
-  background-color: #fff;
+  background: var(--secondary-color);
+  padding: 50px 30px;
+  text-align: center;
 }
 
 footer h3 {
@@ -222,12 +224,6 @@ footer p {
 
 footer a {
   color: #000;
-}
-
-.contact-box {
-  background: var(--secondary-color);
-  padding: 50px 30px;
-  text-align: center;
 }
 
 .social-links {
