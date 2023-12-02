@@ -13,13 +13,17 @@ nav {
 }
 
 header.home {
+  align-items: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+  display: flex;
   height: 100vh;
-  padding: 200px 30px 140px;
-  text-align: center;
+}
+
+header.home div {
+  margin: 0 auto;
 }
 
 header {

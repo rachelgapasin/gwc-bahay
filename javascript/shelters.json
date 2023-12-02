@@ -527,5 +527,16 @@
     "phoneNumber": "(609) 786-1101",
     "volunteerStatus": "open",
     "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.436697362483!2d-74.61504888797624!3d40.35484037133046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3e76db8957809%3A0xbfab5b28291c39ab!2sPlainsboro%20Non%20Profit%20Housing!5e0!3m2!1sen!2sus!4v1700637326456!5m2!1sen!2sus"
+  },
+  {
+    "name": "PERC",
+    "address": "108 36th St",
+    "city": "Union City",
+    "state": "NJ",
+    "zipCode": "08540",
+    "hours": "24 hours",
+    "phoneNumber": "(201) 348-8150",
+    "volunteerStatus": "open",
+    "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.545042342607!2d-74.0226665!3d40.772030199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25825c064496d%3A0x8572db25ac9b26e0!2sPERC!5e0!3m2!1sen!2sus!4v1700683642932!5m2!1sen!2sus"
   }
 ]
