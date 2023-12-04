@@ -341,17 +341,6 @@
     "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6246555.968746266!2d-81.01336908749863!3d40.14058730399078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c19db9824a6b7b%3A0x5f5dddc46828f034!2sInterfaith%20Family%20Services!5e0!3m2!1sen!2sus!4v1700640685247!5m2!1sen!2sus"
   },
   {
-    "name": "Operation Warm Heart, Rahway",
-    "address": "215 Elm Ave",
-    "city": "Rahway",
-    "state": "NJ",
-    "zipCode": "07065",
-    "hours": "Sun-Sat 6PM-7AM",
-    "phoneNumber": "",
-    "volunteerStatus": "open",
-    "mapImageSrc": ""
-  },
-  {
     "name": "Raphael's Life House Inc",
     "address": "231 Court St",
     "city": "Elizabeth",
@@ -371,7 +360,7 @@
     "hours": "Mon-Fri 9AM-5PM",
     "phoneNumber": "(908) 289-7300",
     "volunteerStatus": "open",
-    "mapImageSrc": ""
+    "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.1037759688083!2d-74.2203699230527!3d40.67168234008146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c252aad7071b55%3A0x6692c6093226506d!2sFamily%20Promise%20Union%20County!5e0!3m2!1sen!2sus!4v1701724132624!5m2!1sen!2sus"
   },
   {
     "name": "Essex County Citizen Service - Emergency Assistance",
@@ -379,7 +368,7 @@
     "city": "Essex County",
     "state": "NJ",
     "zipCode": "07018",
-    "hours": "Mon–Fri 9:00AM–3:00PM",
+    "hours": "Mon–Fri 9AM–3PM",
     "phoneNumber": "(973) 395-8400",
     "volunteerStatus": "open",
     "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.9657196322823!2d-74.2163722!3d40.762778700000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c254b36884338b%3A0x3b46cac7592f8aac!2s50%20S%20Clinton%20St%20%235400%2C%20East%20Orange%2C%20NJ%2007018!5e0!3m2!1sen!2sus!4v1700632922595!5m2!1sen!2sus"
@@ -435,7 +424,7 @@
     "city": "Trenton",
     "state": "NJ",
     "zipCode": "08609",
-    "hours": "Mon–Fri 6:00AM–4:00PM",
+    "hours": "Mon–Fri 6AM–4PM",
     "phoneNumber": "(609) 695-1436",
     "volunteerStatus": "open",
     "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.366088306011!2d-74.7592377879819!3d40.22316187135243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c159b5817ad9ad%3A0x1077cdae4a514cb1!2sRescue%20Mission!5e0!3m2!1sen!2sus!4v1700635232475!5m2!1sen!2sus"
@@ -446,7 +435,7 @@
     "city": "Hackensack",
     "state": "NJ",
     "zipCode": "07601",
-    "hours": "Mon–Fri 8:00AM–4:30PM",
+    "hours": "Mon–Fri 8AM–4:30PM",
     "phoneNumber": "(201) 336-7600",
     "volunteerStatus": "open",
     "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.7768810182856!2d-74.04565262269107!3d40.87677042751016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f9f0b69faf6b%3A0x1b39346a77109c9!2sHousing%20Authority%20of%20Bergen%20County!5e0!3m2!1sen!2sus!4v1700635743690!5m2!1sen!2sus"
@@ -479,7 +468,7 @@
     "city": "East Orange",
     "state": "NJ",
     "zipCode": "07018",
-    "hours": "Mon–Fri 8:30AM–5:00PM",
+    "hours": "Mon–Fri 8:30AM–5PM",
     "phoneNumber": "(973) 395-8350",
     "volunteerStatus": "open",
     "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.970213073241!2d-74.21905028795864!3d40.76267987126659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c254b36a4d4bdb%3A0x3cf53e7bb1f896c0!2sDivision%20of%20Community%20Action!5e0!3m2!1sen!2sus!4v1700636365716!5m2!1sen!2sus"
@@ -501,21 +490,10 @@
     "city": "Bridgeton",
     "state": "NJ",
     "zipCode": "08302",
-    "hours": "Mon–Fri 9:00AM–4:00PM",
+    "hours": "Mon–Fri 9AM–4PM",
     "phoneNumber": "(856) 451-4454",
     "volunteerStatus": "open",
     "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d788940.9033976762!2d-76.45242342187497!3d39.4286377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c73944294e97eb%3A0xdf886ed607fc35f!2sBridgeton%20Housing%20Authority!5e0!3m2!1sen!2sus!4v1700636944341!5m2!1sen!2sus"
-  },
-  {
-    "name": "The Hoboken Shelter",
-    "address": "300 Bloomfield Street",
-    "city": "Hoboken",
-    "state": "NJ",
-    "zipCode": " 07030",
-    "hours": "Mon–Fri 9:00AM–9:00PM",
-    "phoneNumber": "(201) 656-5069",
-    "volunteerStatus": "open",
-    "mapImageSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9862956673924!2d-74.03382038795955!3d40.740327071270116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2575f90a7217f%3A0x63e7f0e630ce1502!2sThe%20Hoboken%20Shelter!5e0!3m2!1sen!2sus!4v1700637084451!5m2!1sen!2sus"
   },
   {
     "name": "Plainsboro Non Profit Housing",
