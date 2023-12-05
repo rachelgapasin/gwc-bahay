@@ -16,7 +16,7 @@ function displaySheltersByPage(page, city) {
   const sheltersToDisplay = sheltersData.slice(startIndex, endIndex);
 
   if (city && sheltersToDisplay.length === 0) {
-    const formattedCity = capitalizeFirstLetter(city);
+    const formattedCity = capitalizeFirstLetter(city.trim());
 
     // No results for the searched city
     const noResultsMessage = `
@@ -39,7 +39,7 @@ function displaySheltersByPage(page, city) {
     shelterContainer.innerHTML += noResultsMessage;
   } else {
     if (city) {
-      const formattedCity = capitalizeFirstLetter(city);
+      const formattedCity = capitalizeFirstLetter(city.trim());
 
       const numberOfResults = sheltersData.length;
       const resultsText = numberOfResults === 1 ? "result" : "results";
@@ -150,7 +150,7 @@ function searchCity(city) {
     .then((allShelters) => {
       // Filter shelters based on the input city
       const filteredShelters = allShelters.filter((shelter) =>
-        shelter.city.toLowerCase().includes(city.toLowerCase())
+        shelter.city.toLowerCase().includes(city.trim().toLowerCase())
       );
 
       // Update sheltersData with the filtered results
