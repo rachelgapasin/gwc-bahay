@@ -47,7 +47,7 @@ const questions = [
   },
   {
     question:
-      "Shelters that is the most established form of housing assistance. Provides affordable housing to those who can't afford much even with a job.",
+      "Shelters that are the most established form of housing assistance. Provides affordable housing to those who can't afford much even with a job.",
     optionA: "Transitional housing",
     optionB: "Permanent Supporitve Housing",
     optionC: "Family Shelters",
@@ -75,7 +75,7 @@ const questions = [
   {
     question:
       "Shelter that gives people the chance to gain experience as a tenant while benefitting from social services.",
-    optionA: "Protypical Shelters",
+    optionA: "Prototypical Shelters",
     optionB: "Transitional Housing",
     optionC: "Permanent Supportive Housing",
     optionD: "Domestic Violence or Women Shelters",
@@ -181,7 +181,7 @@ const questions = [
     correctOption: "optionD",
   },
   {
-    question: "Which Shelter is a subset of emergency shelters?",
+    question: "Which shelter is a subset of emergency shelters?",
     optionA: "Wet Shelters",
     optionB: "Transitional Housing",
     optionC: "Domestic Violence or Women's Shelters",
@@ -237,7 +237,7 @@ let indexNumber = 0; //will be used in displaying next question
 
 // function for displaying next question in the array to dom
 //also handles displaying players and quiz information to dom
-function NextQuestion(index) {
+function nextQuestion(index) {
   handleQuestions();
   const currentQuestion = shuffledQuestions[index];
   document.getElementById("question-number").innerHTML = questionNumber;
@@ -317,7 +317,7 @@ function handleNextQuestion() {
   setTimeout(() => {
     if (indexNumber <= 9) {
       //displays next question as long as index number isn't greater than 9, remember index number starts from 0, so index 9 is question 10
-      NextQuestion(indexNumber);
+      nextQuestion(indexNumber);
     } else {
       handleEndGame(); //ends game if index number greater than 9 meaning we're already at the 10th question
     }
@@ -347,20 +347,22 @@ function handleEndGame() {
   let remark = null;
   let remarkColor = null;
 
+  const playerGrade = (playerScore / indexNumber) * 100;
+
   // condition check for player remark and remark color
-  if (playerScore <= 3) {
+  if (playerGrade <= 30) {
     remark = "Keep Practicing!";
     remarkColor = "red";
-  } else if (playerScore >= 4 && playerScore < 7) {
+  } else if (playerGrade >= 40 && playerGrade < 70) {
     remark = "You're getting there!";
     remarkColor = "orange";
-  } else if (playerScore >= 7) {
+  } else if (playerGrade >= 70) {
     remark = "Well done! You know your shelters!";
     remarkColor = "green";
   }
-  const playerGrade = (playerScore / 10) * 100;
 
   //data to display to score board
+  document.getElementById("attempts").innerHTML = indexNumber;
   document.getElementById("remarks").innerHTML = remark;
   document.getElementById("remarks").style.color = remarkColor;
   document.getElementById("grade-percentage").innerHTML = playerGrade;
@@ -376,6 +378,6 @@ function closeScoreModal() {
   wrongAttempt = 0;
   indexNumber = 0;
   shuffledQuestions = [];
-  NextQuestion(indexNumber);
+  nextQuestion(indexNumber);
   document.getElementById("score-modal").style.display = "none";
 }

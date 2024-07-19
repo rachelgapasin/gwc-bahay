@@ -16,7 +16,7 @@ function displaySheltersByPage(page, city) {
   const sheltersToDisplay = sheltersData.slice(startIndex, endIndex);
 
   if (city && sheltersToDisplay.length === 0) {
-    const formattedCity = capitalizeFirstLetter(city.trim());
+    const formattedCity = capitalizeFirstLetter(city);
 
     // No results for the searched city
     const noResultsMessage = `

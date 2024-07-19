@@ -89,7 +89,7 @@
       <h1>Shelters Quiz</h1>
       <h2>Want to learn more about Homeless Shelters? Test your knowledge!</h2>
     </header>
-    <body onload="NextQuestion(0)">
+    <body onload="nextQuestion(0)">
       <main>
         <section>
           <!-- creating a modal for when quiz ends -->
@@ -98,11 +98,11 @@
               <h1>Congratulations, Quiz Completed.</h1>
 
               <div class="grade-details">
-                <p>Attempts: 10</p>
+                <p>Attempts: <span id="attempts"></span></p>
                 <p>Wrong Answers: <span id="wrong-answers"></span></p>
                 <p>Right Answers: <span id="right-answers"></span></p>
                 <p>Grade: <span id="grade-percentage"></span>%</p>
-                <p><span id="remarks"></span></p>
+                <p id="remarks"></p>
               </div>
 
               <div class="modal-button-container">
